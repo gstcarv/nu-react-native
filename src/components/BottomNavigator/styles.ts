@@ -12,8 +12,8 @@ export const FloatedContainer = styled(SafeAreaView)`
 export const Wrapper = styled(View)`
     border-radius: 100px;
     overflow: hidden;
-    height: 48px;
-    width: 164px;
+    height: 52px;
+    width: 194px;
     background-color: rgba(255, 255, 255, 0.8);
 `;
 
@@ -36,7 +36,7 @@ export const NavigationItem = styled.View<NavigationItemsProps>`
 `;
 
 export const NavigationItemIcon = styled(Feather).attrs<NavigationItemsProps>({
-    size: 18,
+    size: 20,
 })<NavigationItemsProps>`
     color: ${({ theme: { colors }, active }) => (active ? colors.primary[500] : colors.neutral[800])};
 `;
