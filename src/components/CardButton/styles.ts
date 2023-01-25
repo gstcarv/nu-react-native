@@ -8,7 +8,6 @@ export const Container = styled.View`
     align-items: center;
     border-radius: 12px;
     padding: 0 ${({ theme: { spacing } }) => spacing.lg}px;
-    margin: ${({ theme: { spacing } }) => spacing.lg}px 0;
 `;
 
 export const Icon = styled(Feather)`

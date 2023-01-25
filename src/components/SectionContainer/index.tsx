@@ -5,14 +5,13 @@ import { ChildrenContainer, Container, Divider, SectionTitle, TitleContainer } f
 type Props = {
     title: string;
     children: ReactNode;
-    disableTitleMargin?: boolean;
 };
 
-const SectionContainer = ({ title, children, disableTitleMargin }: Props) => {
+const SectionContainer = ({ title, children }: Props) => {
     return (
         <>
             <Container>
-                <TitleContainer disableTitleMargin={disableTitleMargin}>
+                <TitleContainer>
                     <SectionTitle>{title}</SectionTitle>
 
                     <Feather name="chevron-right" size={16} />

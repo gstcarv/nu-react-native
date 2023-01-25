@@ -1,10 +1,9 @@
 import React from "react";
 import { ScrollView } from "react-native";
-import CardButton from "../CardButton";
 import SectionContainer from "../SectionContainer";
 import TipCard from "../TipCard";
 import SliderMenu from "./SliderMenu";
-import { ValueText } from "./styles";
+import { MyCardsButton, ValueText } from "./styles";
 
 type Props = {};
 
@@ -15,7 +14,7 @@ const AccountSection = (props: Props) => {
 
             <SliderMenu />
 
-            <CardButton title="Meus cartões" icon="credit-card" />
+            <MyCardsButton title="Meus cartões" icon="credit-card" />
 
             <ScrollView
                 horizontal

@@ -6,7 +6,7 @@ type Props = {};
 
 const FollowSection = (props: Props) => {
     return (
-        <SectionContainer title="Acompanhe também" disableTitleMargin>
+        <SectionContainer title="Acompanhe também">
             <CardButton title="Assistente de pagamentos" icon="repeat"></CardButton>
         </SectionContainer>
     );

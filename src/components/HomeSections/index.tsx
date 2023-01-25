@@ -5,6 +5,7 @@ import AccountSection from "../AccountSection";
 import CreditCardSection from "../CreditCardSection";
 import FollowSection from "../FollowSection";
 import LoanSection from "../LoanSection";
+import FindMoreSection from "../FindMoreSection";
 
 type Props = {};
 
@@ -18,6 +19,8 @@ const HomeSections = (props: Props) => {
             <FollowSection />
 
             <LoanSection />
+
+            <FindMoreSection />
         </Container>
     );
 };

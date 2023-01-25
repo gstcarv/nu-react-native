@@ -12,15 +12,11 @@ export const SectionTitle = styled.Text`
 
 export const ChildrenContainer = styled.View``;
 
-type TitleContainerProps = {
-    disableTitleMargin?: boolean;
-};
-
-export const TitleContainer = styled.View<TitleContainerProps>`
+export const TitleContainer = styled.View`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: ${({ theme, disableTitleMargin }) => (disableTitleMargin ? 0 : theme.spacing.md)}px;
+    margin-bottom: ${({ theme }) => theme.spacing.md}px;
 `;
 
 export const Divider = styled.View`
