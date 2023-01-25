@@ -14,7 +14,7 @@ export const Container = styled.View`
 export const Message = styled.Text`
     font-family: ${({ theme: { fonts } }) => fonts.primary.regular};
     color: ${({ theme: { colors } }) => colors.neutral[800]};
-    font-size: 10px;
+    font-size: 12px;
     width: 80%;
     line-height: 18px;
 `;

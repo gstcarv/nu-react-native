@@ -12,7 +12,7 @@ export const FloatedContainer = styled(SafeAreaView)`
 export const Wrapper = styled(View)`
     border-radius: 100px;
     overflow: hidden;
-    height: 52px;
+    height: 58px;
     width: 194px;
     background-color: rgba(255, 255, 255, 0.8);
 `;
@@ -20,7 +20,7 @@ export const Wrapper = styled(View)`
 export const BlurContainer = styled(BlurView)`
     flex: 1;
     flex-direction: row;
-    padding: ${({ theme: { spacing } }) => spacing["2xs"]}px;
+    padding: ${({ theme: { spacing } }) => spacing["xs"]}px;
 `;
 
 type NavigationItemsProps = {

@@ -25,13 +25,13 @@ export const CardBody = styled.View`
 export const CardTitle = styled.Text`
     font-family: ${({ theme: { fonts } }) => fonts.primary.medium};
     color: ${({ theme: { colors } }) => colors.neutral[900]};
-    font-size: 10px;
+    font-size: 12px;
 `;
 
 export const CardDescription = styled.Text`
     font-family: ${({ theme: { fonts } }) => fonts.primary.regular};
     color: ${({ theme: { colors } }) => colors.neutral[800]};
-    font-size: 10px;
+    font-size: 12px;
     margin: ${({ theme: { spacing } }) => spacing.sm}px 0;
 `;
 
@@ -46,5 +46,5 @@ export const ActionButton = styled.View`
 export const ActionButtonText = styled.Text`
     font-family: ${({ theme: { fonts } }) => fonts.primary.bold};
     color: ${({ theme: { colors } }) => colors.neutral[0]};
-    font-size: 10px;
+    font-size: 12px;
 `;

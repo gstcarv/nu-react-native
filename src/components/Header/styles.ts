@@ -33,7 +33,7 @@ export const ActionButtonIcon = styled(Feather).attrs({
 
 export const GreetingText = styled.Text`
     color: ${({ theme: { colors } }) => colors.neutral[0]};
-    font-size: 14px;
+    font-size: 16px;
     font-family: ${({ theme: { fonts } }) => fonts.primary.semibold};
     margin-top: ${({ theme: { spacing } }) => spacing.xl}px;
 `;
