@@ -28,7 +28,7 @@ export const ActionButtonIcon = styled(Feather).attrs({
     size: 18,
 })`
     color: ${({ theme }) => theme.colors.neutral[0]};
-    margin-right: ${({ theme: { spacing } }) => spacing.lg}px;
+    margin-left: ${({ theme: { spacing } }) => spacing.lg}px;
 `;
 
 export const GreetingText = styled.Text`
