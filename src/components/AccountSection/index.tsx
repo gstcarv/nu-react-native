@@ -1,5 +1,7 @@
 import React from "react";
 import { ScrollView } from "react-native";
+import { valueHiddenText } from "../../config/constants";
+import { useValueSettings } from "../../contexts/ValueSettingsContext";
 import SectionContainer from "../SectionContainer";
 import TipCard from "../TipCard";
 import SliderMenu from "./SliderMenu";
@@ -8,9 +10,11 @@ import { MyCardsButton, ValueText } from "./styles";
 type Props = {};
 
 const AccountSection = (props: Props) => {
+    const { showValue } = useValueSettings();
+
     return (
         <SectionContainer title="Conta">
-            <ValueText>R$ 122,57</ValueText>
+            <ValueText>{showValue ? "R$ 122,57" : valueHiddenText}</ValueText>
 
             <SliderMenu />
 

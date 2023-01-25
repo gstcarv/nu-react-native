@@ -24,7 +24,7 @@ const SliderMenu = (props: Props) => {
 
             <MenuItem
                 title="Transferir"
-                icon={<FontAwesome name="money" size={18} color={theme.colors.neutral[900]} />}
+                icon={<FontAwesome name="exchange" size={18} color={theme.colors.neutral[900]} />}
             />
 
             <MenuItem

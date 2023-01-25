@@ -1,6 +1,8 @@
 import { Feather } from "@expo/vector-icons";
 import React from "react";
+import { Pressable } from "react-native";
 import { useTheme } from "styled-components";
+import { useValueSettings } from "../../contexts/ValueSettingsContext";
 import {
     ActionButtonIcon,
     ActionButtonsContainer,
@@ -14,6 +16,7 @@ type Props = {};
 
 const Header = (props: Props) => {
     const theme = useTheme();
+    const { showValue, toggleValue } = useValueSettings();
 
     return (
         <Container>
@@ -23,7 +26,9 @@ const Header = (props: Props) => {
                 </ImageButtonContainer>
 
                 <ActionButtonsContainer>
-                    <ActionButtonIcon name="eye" />
+                    <Pressable onPress={toggleValue}>
+                        <ActionButtonIcon name={showValue ? "eye-off" : "eye"} />
+                    </Pressable>
 
                     <ActionButtonIcon name="help-circle" />
                     <ActionButtonIcon name="user-plus" />

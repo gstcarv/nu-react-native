@@ -2,6 +2,7 @@ import { StatusBar } from "expo-status-bar";
 import { ThemeProvider } from "styled-components";
 import { useFontConfig } from "./src/config/hooks/useFontConfig";
 import { theme } from "./src/config/theme";
+import { ValueSettingsProvider } from "./src/contexts/ValueSettingsContext";
 import HomeScreen from "./src/screens/Home";
 
 export default function App() {
@@ -15,7 +16,9 @@ export default function App() {
         <>
             <StatusBar animated style="light" />
             <ThemeProvider theme={theme}>
-                <HomeScreen />
+                <ValueSettingsProvider>
+                    <HomeScreen />
+                </ValueSettingsProvider>
             </ThemeProvider>
         </>
     );
