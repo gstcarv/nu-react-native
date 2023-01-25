@@ -10,7 +10,7 @@ export const Container = styled.View`
 export const Title = styled.Text`
     font-family: ${({ theme: { fonts } }) => fonts.primary.medium};
     font-size: 10px;
-    margin-top: ${({ theme: { spacing } }) => spacing.md}px;
+    margin-top: ${({ theme: { spacing } }) => spacing.sm}px;
     text-align: center;
 `;
 

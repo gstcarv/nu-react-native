@@ -44,7 +44,7 @@ export const ActionButton = styled.View`
 `;
 
 export const ActionButtonText = styled.Text`
-    font-family: ${({ theme: { fonts } }) => fonts.primary.semibold};
+    font-family: ${({ theme: { fonts } }) => fonts.primary.bold};
     color: ${({ theme: { colors } }) => colors.neutral[0]};
     font-size: 10px;
 `;

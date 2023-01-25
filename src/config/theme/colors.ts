@@ -1,7 +1,7 @@
 export const colors = {
     primary: {
         500: "#820AD2",
-        100: "#F8F1FE",
+        100: "#F6EBFD",
     },
 
     neutral: {
