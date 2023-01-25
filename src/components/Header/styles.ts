@@ -2,7 +2,7 @@ import styled from "styled-components/native";
 import { Feather } from "@expo/vector-icons";
 
 export const Container = styled.View`
-    padding-horizontal: ${({ theme: { spacing } }) => spacing.lg}px;
+    padding-horizontal: ${({ theme: { spacing } }) => spacing.xl}px;
 `;
 
 export const HeaderActionsContainer = styled.View`
@@ -34,6 +34,6 @@ export const ActionButtonIcon = styled(Feather).attrs({
 export const GreetingText = styled.Text`
     color: ${({ theme: { colors } }) => colors.neutral[0]};
     font-size: 16px;
-    font-family: ${({ theme: { fonts } }) => fonts.primary.bold};
+    font-family: ${({ theme: { fonts } }) => fonts.primary.semibold};
     margin-top: ${({ theme: { spacing } }) => spacing.xl};
 `;
