@@ -5,21 +5,23 @@ import { ChildrenContainer, Container, Divider, SectionTitle, TitleContainer } f
 type Props = {
     title: string;
     children: ReactNode;
+    disableTitleMargin?: boolean;
 };
 
-const SectionContainer = ({ title, children }: Props) => {
+const SectionContainer = ({ title, children, disableTitleMargin }: Props) => {
     return (
-        <Container>
-            <TitleContainer>
-                <SectionTitle>{title}</SectionTitle>
+        <>
+            <Container>
+                <TitleContainer disableTitleMargin={disableTitleMargin}>
+                    <SectionTitle>{title}</SectionTitle>
 
-                <Feather name="chevron-right" size={16} />
-            </TitleContainer>
+                    <Feather name="chevron-right" size={16} />
+                </TitleContainer>
 
-            <ChildrenContainer>{children}</ChildrenContainer>
-
+                <ChildrenContainer>{children}</ChildrenContainer>
+            </Container>
             <Divider />
-        </Container>
+        </>
     );
 };
 

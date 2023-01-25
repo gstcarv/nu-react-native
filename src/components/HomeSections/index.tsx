@@ -4,6 +4,7 @@ import { Container } from "./styles";
 import AccountSection from "../AccountSection";
 import CreditCardSection from "../CreditCardSection";
 import FollowSection from "../FollowSection";
+import LoanSection from "../LoanSection";
 
 type Props = {};
 
@@ -15,6 +16,8 @@ const HomeSections = (props: Props) => {
             <CreditCardSection />
 
             <FollowSection />
+
+            <LoanSection />
         </Container>
     );
 };
