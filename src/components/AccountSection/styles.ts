@@ -4,7 +4,7 @@ import CardButton from "../CardButton";
 export const ValueText = styled.Text`
     font-family: ${({ theme: { fonts } }) => fonts.primary.medium};
     font-size: 16px;
-    margin-bottom: ${({ theme: { spacing } }) => spacing["2xl"]};
+    margin-bottom: ${({ theme: { spacing } }) => spacing["2xl"]}px;
 `;
 
 export const MyCardsButton = styled(CardButton)`

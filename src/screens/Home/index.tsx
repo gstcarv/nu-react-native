@@ -17,16 +17,14 @@ const HomeScreen = (props: Props) => {
 
     return (
         <Container>
-            <SafeAreaView>
-                <ScrollView
-                    refreshControl={<RefreshControl refreshing={isRefreshing} onRefresh={onRefresh} tintColor="#fff" />}
-                    showsVerticalScrollIndicator={false}
-                >
-                    <Header />
+            <ScrollView
+                refreshControl={<RefreshControl refreshing={isRefreshing} onRefresh={onRefresh} tintColor="#fff" />}
+                showsVerticalScrollIndicator={false}
+            >
+                <Header />
 
-                    <HomeSections />
-                </ScrollView>
-            </SafeAreaView>
+                <HomeSections />
+            </ScrollView>
         </Container>
     );
 };
