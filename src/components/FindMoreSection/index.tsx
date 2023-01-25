@@ -9,7 +9,7 @@ type Props = {};
 
 const FindMoreSection = (props: Props) => {
     return (
-        <SectionContainer title="Descubra mais">
+        <SectionContainer title="Descubra mais" disableDivider>
             <ScrollView
                 horizontal
                 showsHorizontalScrollIndicator={false}

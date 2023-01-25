@@ -5,9 +5,10 @@ import { ChildrenContainer, Container, Divider, SectionTitle, TitleContainer } f
 type Props = {
     title: string;
     children: ReactNode;
+    disableDivider?: boolean;
 };
 
-const SectionContainer = ({ title, children }: Props) => {
+const SectionContainer = ({ title, children, disableDivider }: Props) => {
     return (
         <>
             <Container>
@@ -19,7 +20,8 @@ const SectionContainer = ({ title, children }: Props) => {
 
                 <ChildrenContainer>{children}</ChildrenContainer>
             </Container>
-            <Divider />
+
+            {!disableDivider && <Divider />}
         </>
     );
 };

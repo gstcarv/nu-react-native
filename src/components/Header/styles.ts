@@ -2,7 +2,7 @@ import styled from "styled-components/native";
 import { Feather } from "@expo/vector-icons";
 
 export const Container = styled.View`
-    padding-horizontal: ${({ theme: { spacing } }) => spacing.xl}px;
+    padding: 0 ${({ theme: { spacing } }) => spacing.xl}px;
 `;
 
 export const HeaderActionsContainer = styled.View`
@@ -35,5 +35,5 @@ export const GreetingText = styled.Text`
     color: ${({ theme: { colors } }) => colors.neutral[0]};
     font-size: 14px;
     font-family: ${({ theme: { fonts } }) => fonts.primary.semibold};
-    margin-top: ${({ theme: { spacing } }) => spacing.xl};
+    margin-top: ${({ theme: { spacing } }) => spacing.xl}px;
 `;

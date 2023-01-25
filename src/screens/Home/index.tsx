@@ -1,30 +1,20 @@
-import { View, Text, ScrollView, SafeAreaView, RefreshControl } from "react-native";
-import React, { useState } from "react";
-import { Container } from "./styles";
+import React from "react";
+import { RefreshControl } from "react-native";
 import Header from "../../components/Header";
+import HomeScrollView from "../../components/HomeScrollView";
 import HomeSections from "../../components/HomeSections";
+import { Container } from "./styles";
 
 type Props = {};
 
 const HomeScreen = (props: Props) => {
-    const [isRefreshing, setIsRefreshing] = useState(false);
-
-    function onRefresh() {
-        setIsRefreshing(true);
-
-        setTimeout(() => setIsRefreshing(false), 2000);
-    }
-
     return (
         <Container>
-            <ScrollView
-                refreshControl={<RefreshControl refreshing={isRefreshing} onRefresh={onRefresh} tintColor="#fff" />}
-                showsVerticalScrollIndicator={false}
-            >
+            <HomeScrollView>
                 <Header />
 
                 <HomeSections />
-            </ScrollView>
+            </HomeScrollView>
         </Container>
     );
 };
