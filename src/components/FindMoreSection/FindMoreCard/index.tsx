@@ -16,7 +16,7 @@ const FindMoreCard = (props: Props) => {
     return (
         <Container>
             <ImageContainer>
-                <Image source={{ uri: "https://picsum.photos/300/200?random=1" }} />
+                <Image source={{ uri: "https://picsum.photos/300/200?random=" + Math.floor(Math.random() * 1000) }} />
             </ImageContainer>
 
             <CardBody>
