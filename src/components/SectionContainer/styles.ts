@@ -5,7 +5,7 @@ export const Container = styled.View`
 `;
 
 export const SectionTitle = styled.Text`
-    font-size: 16px;
+    font-size: 14px;
     color: ${({ theme: { colors } }) => colors.neutral[900]};
     font-family: ${({ theme: { fonts } }) => fonts.primary.medium};
 `;

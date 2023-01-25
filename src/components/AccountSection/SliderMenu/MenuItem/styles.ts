@@ -2,14 +2,14 @@ import styled from "styled-components/native";
 import { Feather } from "@expo/vector-icons";
 
 export const Container = styled.View`
-    margin-right: ${({ theme: { spacing } }) => spacing.lg}px;
+    margin-right: ${({ theme: { spacing } }) => spacing.md}px;
     align-items: center;
-    max-width: 100px;
+    width: 52px;
 `;
 
 export const Title = styled.Text`
     font-family: ${({ theme: { fonts } }) => fonts.primary.medium};
-    font-size: 12px;
+    font-size: 10px;
     margin-top: ${({ theme: { spacing } }) => spacing.md}px;
     text-align: center;
 `;

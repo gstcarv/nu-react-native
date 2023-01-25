@@ -16,5 +16,5 @@ export const Icon = styled(Feather)`
 
 export const Title = styled.Text`
     font-family: ${({ theme: { fonts } }) => fonts.primary.medium};
-    font-size: 12px;
+    font-size: 10px;
 `;

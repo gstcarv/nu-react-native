@@ -3,7 +3,7 @@ import CardButton from "../CardButton";
 
 export const ValueText = styled.Text`
     font-family: ${({ theme: { fonts } }) => fonts.primary.medium};
-    font-size: 16px;
+    font-size: 14px;
     margin-bottom: ${({ theme: { spacing } }) => spacing["2xl"]}px;
 `;
 
